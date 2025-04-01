@@ -10,3 +10,4 @@ app.include_router(blog.router)
 @app.get("/")
 def home():
     return {"message": "Welcome to Project 3 API"}
+
