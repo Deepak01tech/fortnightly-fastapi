@@ -13,8 +13,8 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 # Set up Jinja2 for templates
 templates = Jinja2Templates(directory="templates")
 
-conn = MongoClient("mongodb+srv://dp55954:HXuZXdRAqBU193Os@cluster0.rcbvl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-# mongodb+srv://dp55954:HXuZXdRAqBU193Os@cluster0.rcbvl.mongodb.net/
+conn = MongoClient("mongodb+srv://dp55954:password@cluster0.rcbvl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+
 
 class Item(BaseModel):
     name: str
