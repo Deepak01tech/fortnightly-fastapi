@@ -35,6 +35,9 @@ def insert_user(user: User_create):
 
 
 
+
+
+
 def create_clients_table_if_not_exists():
     conn = get_connection()
     cursor = conn.cursor()
@@ -51,6 +54,7 @@ def create_clients_table_if_not_exists():
     cursor.close()
     conn.close()
 
+
 def insert_client(client: ClientCreate):
     conn = get_connection()
     cursor = conn.cursor()
@@ -61,6 +65,8 @@ def insert_client(client: ClientCreate):
     cursor.close()
     conn.close()
     return {"message": "Client created successfully"}
+
+
 
 
  # You need to define this schema
@@ -92,5 +98,6 @@ def insert_project(project: ProjectCreate):
     cursor.close()
     conn.close()
     return {"message": "Project created successfully"}
+
 
 
